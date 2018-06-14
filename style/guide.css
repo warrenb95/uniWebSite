@@ -1,0 +1,84 @@
+.leftCol {
+    float: left;
+    padding: 0 1%;
+    margin: 0 0.5% 0 0;
+    width: 15%;
+    text-align: left;
+    background: white;
+}
+
+.rightCol {
+    float: right;
+    padding: 0 1%;
+    margin: 0 0 0 0.5%;
+    width: 80%;
+    text-align: left;
+    background: white;
+}
+
+.landscapeImg {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.portraitImg {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    max-height: 30em;
+}
+
+.responsive {
+    width: 100%;
+}
+
+.imgLink {
+    width: 95%;
+}
+
+.imgLink:hover {
+    box-shadow: 0 0 20px grey;
+}
+
+.xScroll {
+    margin: 10px 0;
+}
+
+.col2 {
+    width: 45%;
+    padding: 1.25%;
+}
+
+@media (max-width: 800px) {
+    .rightCol {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .leftCol {
+        width: 90%;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    
+    .xScroll {
+        display: inline-block;
+        margin: 0 10px;
+        overflow-x: hidden;
+    }
+
+    .imgLink {
+        height: 150px;
+        width: auto;
+    }
+    
+    .col2{width: 95%;}
+    
+    .wrapper{
+        width: 95%;
+        margin: auto;
+    }
+}

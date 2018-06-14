@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="style/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style/styles.css">
+        
+		<title>Warren - Home page</title>
+		
+		
+	</head>
+	
+	<body>
+        <div id="wrapper">
+            <nav id="topNav">
+                <ul>
+                    <li><a class="active">Warren's Learning Journal</a></li>
+                    <li class="relativeMenu"><a href="guide.html">Guide</a></li>
+                    <li class="relativeMenu"><a href="contact.html">Contact me</a></li>
+                    <li class="dropDown">
+                        <a href="#" class="dropBtn">&#9776;</a>
+                        <div class="dropContent">
+                            <a href="guide.html">Guide</a>
+                            <a href="contact.html">Contact me</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#topNav" id="toTopBtn">Top</a>
+
+            <header>
+                <h1>Warren's Learning Journal</h1>
+                <h2>CI135 - 10 weeks of learning HTML and CSS</h2>
+            </header>
+            
+            <article>
+                <header>
+                    <h3>Week 11</h3>
+                </header>
+                
+                <p>While adding my references to the footer of the index page I realised that the HTML elements that I wanted to display as plain text were being formatted as HTML. I did some research and discovered a way of displaying characters such as ‘&lt;’  and ‘&gt;’ as plain text instead of the browser trying to render the element inside of the square brackets. This article <a href="https://www.thesitewizard.com/html-tutorial/html-4-xhtml-tutorial-2.shtml">here</a> explains how to insert special characters as text into a HTML document.</p>
+                
+                <div class="col2">
+                    <h4>Before</h4>
+                    <img class="col2Img" src="imgs/index/referencesBefore.PNG" alt="Image showing the HTML element tags being formated when they are should not be." />
+                </div>
+                
+                <div class="col2">
+                    <h4>After I applied my research</h4>
+                    <img class="col2Img" src="imgs/index/referencesAfter.PNG" alt="Image showing the HTML element tags not being formated, as intended." />
+                </div>
+                
+                <div class="clear"></div>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 10</h3>
+                </header>
+                
+                <div class="col2">
+                    <p>This week I did something that I think has really improved my guide page. I embedded a custom create map from google maps. I have added pins to the map of all the locations I have written about, so the reader can easily find the location and visit them if they desire.</p>
+
+                    <p>Getting the map on my guide page was incredibly easy, all I had to so after creating the map was to copy and paste a small snippet of html into my guide page.
+                    </p>
+                </div>
+                
+                <div class="col2">
+                    <img class="col2Img" src="imgs/index/20171129guide.PNG" alt="Image of the embedded map on my guide page."/>
+                </div>
+                
+                <div class="col2">
+                    <h4>Before validation</h4>
+                    
+                    <img class="col2Img" src="imgs/validation/GuideWeek10Validation.PNG" alt="The errors and warnings from the w3 html validator.">
+                </div>
+                
+                <div class="col2">
+                    <h4>After validation</h4>
+                    
+                    <img class="col2Img" src="imgs/validation/GuideWeek10ValidationAfter.PNG" alt="Zero errors and warnings from the w3 html validator after I fixed the bugs.">
+                </div>
+                
+                <div class="clear"></div>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-12-07">December 7, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 9</h3>
+                </header>
+                
+                <p>In week 9 I looked at creating a mock from for my contact page. This is a simple form that a user will be able to fill out to contact me. On this page there is already links to some of my social media accounts such as Instagram and twitter that people can follow and contact me via these platforms. Although some people do not use these social media, hence another more generic method of contact had to be created to allow all to be able to message me.</p>
+                
+                <p>As you can see bellow the snippet taken from my contact shows the form that I have implemented. The form is incredible simple and only requests the users name, an email so the message can be responded to, then finally the message itself.</p>
+                
+                <p>In keeping the form as simple as possible I think that it makes it more inviting for the user to leave a message because of the simplicity to do so, the user only needs an email address, they also do not need to sign in or create an account. The process is extremely quick and easy, as well as user friendly due to the hints at what needs to be entered the input fields.</p>
+                
+                <img class="largeImg" src="imgs/index/20171205contact.PNG" alt="Image of my contact page, displaying the new form." >
+                
+                <div class="clear"></div>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-11-26">November 26, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 8</h3>
+                </header>
+                
+                <p>After my progress review on week 7 I luckily only had to make a few changes to my website. The main change being that I needed to edit the order of my style sheets because I had the normalize style sheet after my own style sheet which meant that my style sheet would be overwritten by the normalize style sheet. This is clearly not what I wanted, so I corrected this by reversing the order.</p>
+
+                <div class="col2">
+                    <h4>Before style sheet change in HTML</h4>
+                    <img class="col2Img" src="imgs/index/styleSheetBefore.PNG" alt="Image showing the normalize style sheet after my style sheet." />
+                </div>
+
+                <div class="col2">
+                    <h4>After style sheet change in HTML</h4>
+                    <img class="col2Img" src="imgs/index/styleSheetAfter.PNG" alt="Image showing the normalize style sheet before my style sheet." />
+                </div>
+                
+                <p class="clear">After looking for inspiration for website designs, I came across this website that had a horizontal scroll bar that I really liked. The website is a photography website found <a href="https://album.alexflueras.ro/" target="_blank">here</a> and it uses a horizontal scroll bar to display the images on the website. I thought I could use this for my guide page to display the ‘useful links’ as images underneath the main content of the page. </p>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-11-16">November 16, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 7</h3>
+                </header>
+                
+                <p class="clear">This week’s lecture was all about ‘flexible’ media, it was nothing new to me especially using relative ‘%’ instead of a fixed ‘px’ widths/height. This can be seen throughout my webpage in all my sections, divider elements as well as the media on my webpages. Some examples can be seen bellow of this.</p>
+                
+                <div class="col2">
+                    <h4>.leftCol relative width example</h4>
+                    <img class="col2Img" src="imgs/index/leftColCss.PNG" alt="Image of the .leftCol CSS with a relative width of 35%." />
+                </div>
+                
+                <div class="col2">
+                    <h4>.centreImg relative width example</h4>
+                    <img class="col2Img" src="imgs/index/centreImgCSS.PNG" alt="Image of the .centreImg CSS with a relative width of 100%." />
+                </div>
+                
+                <p class="clear">Using relative widths adds a whole new dimension of responsiveness to a website because it allows the developer to make a site better suited for the modern web. People are now using mobile device to consume content from the web a lot more than in the past, hence having a dynamic webpage that can adapt to multiple screen sizes makes the consumption of the websites content much more easier than if it was a static page and the user had to ‘pinch zoom’ to read the content on the page, or view a static image that takes up more than the whole screen size.</p>
+                
+                <p class="clear">This week I also created a new class for my p elements because I wanted them to clear the images that I use in the col2 divs on the index page. See bellow that the paragraph text isn’t bellow the images. It seems to have floated in order to fit more on the screen, but this doesn’t look good because the text is messy, it isn’t uniform throughout the entire webpage as some images are taller than others.</p>
+                
+                <h4>Paragraph before the clear class styling</h4>
+                <img class="largeImg" src="imgs/index/clearBefore.PNG" alt="Image showing the paragraph text floating up next to the left div column." />
+                
+                <h4>Paragraph after the the class styling</h4>
+                <img class="largeImg" src="imgs/index/clearAfter.png" alt="Image showing the paragraph text clearing both div columns." />
+                
+                <p>To control the paragraph text, I have added a new class called clear and given it the styling to clear both which means that it will now be displayed under both column images and will not float up to the image on the right. Further reading on the clear property can be found <a href="https://www.w3schools.com/cssref/pr_class_clear.asp" target="_blank">here</a></p>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-11-16">November 16, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 6</h3>
+                </header>
+                
+                <p class="clear">One of the main things I took away from week 6’s lecture was the use of columns in webpages. I really like the idea of having multiple columns on my webpage instead of just the single column like on the index page of my website. Hence, I have decided that I am going to use a multi column system with my guide page as seen bellow.</p>
+                
+                <p class="clear">The challenge this week will to make the guide page responsive, so that the 2 columns will become one or one column might just not be displayed depending on what content I put on it. I think by having the division with the two columns I’ll be able to clearly separate the content of my page. I could even use the ride panel as a reference section or ‘further reading’ list.</p>
+                
+                <div class="col2">
+                    <h4>Desktop Design</h4>
+                    <img class="col2Img" src="imgs/index/guideDesignDesktop.png" alt="Simple box desing showing a webpage with a main column and a side column." />
+                </div>
+                
+                <div class="col2">
+                    <h4>Mobile Design</h4>
+                    <img class="col2Img" src="imgs/index/guideDesignMobile.png" alt="Simple box desing of the guide mobile web page. The main section is above the useful links." />
+                </div>
+                
+                <p class="clear">After making the design I put this idea into practise by using HTML and CSS as you can see below.  I really like how it looks now because you can clearly see the separation of the columns. I think the margin between the two columns clearly shows that these are two separate columns in a clean way without the use of say a big thick line in the middle of the screen to separate the sections.</p>
+                
+                <div class="col2">
+                    <h4>Section HTML</h4>
+                    <img class="col2Img" src="imgs/index/colHtml.PNG" alt="Image of the two HTML sections of my guide page, both with different classes, rightCol and leftCol." />
+                </div>
+
+                <div class="col2">
+                    <h4>Section CSS</h4>
+                    <img class="col2Img" src="imgs/index/colCss.PNG" alt="Image showing the different CSS of the rightCol and leftCol class." />
+                </div>
+                
+                
+                <p class="clear">I only have one issue and that is that the columns currently have different lengths, and this makes the page look messy in my opinion because of the different heights of the white background colours. I would rather both sections have the same length to make the page look uniform.</p>
+                
+                <img class="largeImg" src="imgs/index/20171111GuidePage.PNG" alt="Image showing the current guide page as of 2017-11-12."/>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-11-12">November 12, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 5</h3>
+                </header>
+                
+                <p class="clear">I didn’t like how when I clicked on links it used the current window/tab to navigate to the new page. I think the user should never be forced to leave the website as it may lead to the them leaving the website all together or decrease the chance of them return because it’s annoying constantly having to spam the back button to return to the original page of a website. Hence, I did a little research and found quick fix to my problem <a href="https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html" target="_blank">here</a>. As explained above I think this makes the website run a lot smoother and makes navigation easier for the user.</p>
+                
+                <p class="clear">Another thing I looked at this week was making my menu responsive. I wanted it to start off as a classic horizontal menu and then change into a mobile friendly vertical drop down menu. This meant the menu would be able to fit on smaller screens without formatting errors or a menu with multiple rows.</p>
+                
+                <div class="col2">
+                    <h4>Asos example menu</h4>
+                    <img class="col2Img" src="imgs/index/asos_mobile_menu.png" alt="Image of the Asos mobile dropdown menu."/>
+                </div>
+                
+                <div class="col2">
+                    <h4>My 'mobile' menu</h4>
+                    <img class="col2Img" src="imgs/index/mobile_menu.png" alt="Image of the dropdown menu on my responsive website."/>
+                </div>
+                
+                <p class="clear">Above you can see a comparison between the <a href="http://www.asos.com/?hrd=1" target="_blank">Asos</a> mobile website and my responsive website. I'm trying to illustrate how i've taken the dropdown menu used in many mainstream websites and using it in mine.</p>
+                
+                <h4>Week 5 Validation</h4>
+                <img class="medImg" src="imgs/validation/week5Valid.PNG" alt="Image showing that my index page has passed w3 validation after week 5." />
+
+                <p>Validated on <time datetime="2017-11-05">November 05, 2017</time></p>
+
+                <p class="clear">After every week I am trying to make sure that validation is becoming part of my work flow. Therefore, I will be showing the results of the validation after every week from now on. I think having this type of work flow is great because it means that I will not run into problems down the line if I did a validation on my entire website after completion. It's iterative/agile which means that because I am continuously validation my HTML I only need to make slight changes weekly compared to making many changes at the end of development.</p>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-11-05">November 05, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 4</h3>
+                </header>
+                
+                <p class="clear">I tried to make a button to navigate back to the top of my pages instead of the user having to scroll back to the top. I thought this was a lot more convenient for the user. Although I kept running into problems with it, for example I placed the button within an anchor tag but this gave me errors when I validated my HTML.</p>
+                
+                <div class="col2">
+                    <h4>Before</h4>
+                    <img class="col2Img" src="imgs/index/week4a-button.PNG" alt="Image showing a button element being used within an anchor element."/>
+                </div>
+                
+                <div class="col2">
+                    <h4>After</h4>
+                    <img class="col2Img" src="imgs/index/week4Button.png" alt="Image showing my new and working HTML and CSS for the 'Top' buton."/>
+                </div>
+                
+                <p class="clear">I then researched what the issue was and discovered that I was making the button more complex than it should have been. After reading this article on <a href="https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5" target="_blank">stakeoverflow</a>, I realised that I couldn’t place a button within an anchor tag and, so I did some more research and found <a href="https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button" target="_blank">this article</a>. Following on from the second article I made the changes in my HTML as seen above. Overall, I think the ‘Top’ button adds a lot more value to my page in terms of navigation because it’s very simple yet effective.</p>
+                
+                <footer>
+                    <p>Published on <time datetime="2017-10-25">October 25, 2017</time></p>
+                </footer>
+                
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Week 3</h3>
+                </header>
+
+                <p class="clear">One of the main things I took away from this week is best practices of html structure with html 5. We learned that div tags are now becoming redundant and newer tags are being used for better html structure. After looking at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank"> mozilla's page on Document and website structure</a>, I made some changes to the structure of my html using the new tags.</p>
+
+                <div class="col2">
+                    <h4>Before</h4>
+                    <img class="col2Img" src="imgs/index/week3BeforeChange.PNG" alt="Before image of published data being in the article header."/>
+                </div>
+
+                <div class="col2">
+                    <h4>After</h4>
+                    <img class="col2Img" src="imgs/index/week3FooterAdd.PNG" alt="Image showing the new change of the published date in the footer."/>
+                </div>
+
+                <p class="clear">The images above illustrate how I added a footer tag to the article to house the publication date of the article. I think this makes the article look more professional because the article is clearly divided up into three parts: the title, the body, the publication date.</p>
+
+                <footer>
+                    <p>Published on <time datetime="2017-10-18">October 18, 2017</time></p>
+                </footer>
+            </article>
+
+            <article>
+                
+                <header>
+                    <h3>Week 2</h3>
+                </header>
+
+                <p class="clear">After finishing week one I had created three pages for my website: the index or Learning journal page, the guide and finally the contact page.</p>
+
+                <h4>This week I learnt to -</h4>
+                
+                <ol>
+                    <li>Link to parts of my page by using anchor tags. I've added them after every article so the user can quickly navigate back to the top of the page.</li>
+
+                    <li>Create a list like this one</li>
+
+                    <li>I went against the advice of not using CSS and started adding it to my web pages. It was really annoying because the pages just looked like simple text documents and I didn't like this so I did something about it by starting off with changing the top nav bar, making it all inline with the top on the screen. I also added some coulor to it and styling for when the page is 'active' as well as the links being hovered over. It's a simple design but i think it makes the pages look like a proper website.</li>
+
+                    <li>How to add an image to my page and also how to style it using CSS from looking at <a href="https://stackoverflow.com/questions/18803743/size-an-image-to-a-percentage-of-html-window" target="_blank">this</a> article, to make it fit better on the screen and scale correctly when the screen size is changed</li>
+                </ol>
+
+                <footer>
+                    <p>Published on <time datetime="2017-10-11">October 11, 2017</time></p>
+                </footer>
+                
+            </article>
+
+            <article>
+                
+                <header>
+                    <h3>Week 1</h3>
+                </header>
+
+                <p class="clear">After finishing week one I had created three pages for my website: the index or Learning journal page, the guide and finally the contact page. The pages are really basic with no styling. I have created a nav menu at the top of the page that links to all of my pages.</p>
+
+                <p class="clear">After I added the required HTML to my page I validated it as seen bellow:</p>
+
+                <img class="largeImg" src="imgs/validation/weekOneValidation.PNG" alt="Image showing the errors from a html validation check."/>
+                
+
+                <footer>
+                    <p>Published on <time datetime="2017-10-11">October 11, 2017</time></p>
+                </footer>
+                
+            </article>
+
+            <footer>
+                
+                <h2>References</h2>
+
+                <p class="clear">All of the images displayed are my own unless stated otherwise.</p>
+                
+                <p>Itay, 2013. Size an image to a percentage of html window. [online] Available at: &lt;https://stackoverflow.com/questions/18803743/size-an-image-to-a-percentage-of-html-window&gt; [Accessed 11/10/2017]</p>
+                
+                <p>Moore, A., 2011. Can I nest a &lt;button&gt; element inside an &lt;a&gt; using HTML5?. Available at: &lt;https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5&gt; [Accessed 25/10/2017]</p>
+                
+                <p>Mozilla, 2017. Document and website structure. [online] Available at: &lt;https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure&gt; [Accessed 18/10/2017]</p>
+                
+                <p>SharkofMirkwood, 2013. How to open a link in a new tab on html?. Available at: &lt;https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html&gt; [Accessed 05/11/2017]</p>
+                
+                <p>TSamper, 2009. How do I make an html link look like a button?. [online] Available at: &lt;https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button&gt; [Accessed 25/10/2017]</p>
+                
+                <p>W3schools,. CSS clear Property. Available at: &lt;https://www.w3schools.com/cssref/pr_class_clear.asp&gt; [Accessed 16/11/2017]</p>
+                
+                <p>Heng, C., 2011. The HTML Tags that Deal with Text. [online] Available at: &lt; https://www.thesitewizard.com/html-tutorial/html-4-xhtml-tutorial-2.shtml&gt; [Accessed 10/01/2018]</p>
+                
+            </footer>
+            
+        </div>
+        
+    </body>
+    
+</html>

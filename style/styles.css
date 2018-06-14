@@ -1,0 +1,163 @@
+html {
+    background-color: #f2f2f2;
+}
+
+/* Chnage the font to sans-serif - format the wrapper so the topNav fits correctly*/
+#wrapper {
+    margin: auto;
+    max-width: 1500px;
+    vertical-align: middle;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.reference {
+    position: fixed;
+    bottom: 0;
+}
+
+/* gets rid of the - in the ul's, overflow means that the elements are always visable */
+nav#topNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #999999;
+}
+
+/* makes the menu links line up in a row instead of a colomn */
+nav#topNav li {
+    display: inline-block;
+}
+
+nav#topNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* display the active page link in a different colour */
+.active {
+    background-color: #b30000;
+}
+
+/* chaneg the colour of a menu link when you mouse over it except for the active link */
+nav li a:hover:not(.active) {
+    background-color: #8c8c8c;
+}
+
+nav#topNav li.dropDown {
+    display: none;
+}
+
+.dropDown {
+    float: left;
+}
+
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #999999;
+}
+
+.dropDown:hover .dropContent {
+    display: block;
+}
+
+/* make sure an img with class largeImg fills its width to 100% of availabe space */
+img.col2Img {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+}
+
+img.medImg {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+}
+
+img.largeImg {
+    display: block;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/* I want all links to match the same colour as the the active link background-colour, including previously clicked links */
+a {
+    color: #b30000;
+}
+
+a.visited {
+    color: #b30000;
+}
+
+/* want the articles to be slightly more spaced out as i think they are too close by default - had to add the headers because they were too close to the edge of the page*/
+article, h1, h2 {
+    padding: 0 1%;
+}
+
+
+/* articles that have images in i want to split the sections to each cover half the available width otherwise i think images cover too much of the screen */
+.col2 {
+    width: 48%;
+    float: left;
+    margin: 1%;
+}
+
+/* style the toTopBtn with the colour used for links, with a contrasting text colour as well as soft/rounded corners. */
+#toTopBtn {
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    border: none;
+    outline: none;
+    background-color: #b30000; 
+    color: white;
+    cursor: pointer;
+    padding: 12.5px;
+    border-radius: 15px;
+}
+
+article {
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-color: #e6e6e6;
+    border-bottom-style: groove;
+    padding: 1%;
+    margin: 1%;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+@media (max-width:1000px) {
+    .largeImg {
+        width: 100%;
+    }
+}
+
+/* the withImg sections get too small when the screen is small so if the pixel width is less than 800 i want the sections to be placed underneath one another to increase readability */
+@media (max-width:1075px) {
+    .medImg, .col2{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    nav#topNav li.relativeMenu {
+        display: none;
+    }
+    
+    nav#topNav li.dropDown {
+    display: block;
+    }
+}
